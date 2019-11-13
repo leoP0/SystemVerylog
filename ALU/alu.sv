@@ -1,4 +1,4 @@
-// Homework 2
+// ALU
 // Edgar Perez
 // ECE474
 
