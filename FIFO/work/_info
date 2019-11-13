@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/perezed/Documents/ECE474/hw4
+vfifo
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 M[LTX98^0LWzmc@NgbLZe1
+I>=Fk[eC<_?ad8WcWGSlgA3
+!s105 fifo_sv_unit
+S1
+R0
+w1526018935
+8fifo.sv
+Ffifo.sv
+L0 6
+Z3 OL;L;10.5;63
+!s108 1526019375.000000
+!s107 fifo.sv|
+!s90 fifo.sv|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0
+vtb
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 hVejHdZh6lALX>M0EQAlW0
+IC;T1AU;CfB5]`R`l60YIA1
+!s105 tb_sv_unit
+S1
+R0
+w1525899616
+8tb.sv
+Ftb.sv
+L0 12
+R3
+!s108 1526019384.000000
+!s107 tb.sv|
+!s90 tb.sv|
+!i113 0
+R4
+R5

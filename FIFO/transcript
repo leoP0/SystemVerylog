@@ -1,0 +1,247 @@
+# //  ModelSim SE-64 10.5 Feb 12 2016 Linux 3.10.0-693.11.1.el7.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -novopt tb 
+# Start time: 23:17:03 on May 10,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /nfs/stak/users/perezed/Documents/ECE474/hw4/work.tb
+# Loading sv_std.std
+# Loading work.tb
+# Refreshing /nfs/stak/users/perezed/Documents/ECE474/hw4/work.fifo
+# Loading work.fifo
+# ** Warning: (vsim-PLI-3691) tb.sv(101): Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /tb/wrstim File: tb.sv
+run 3200
+# ** Warning: (vsim-8315) fifo.sv(88): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ns  Iteration: 0  Instance: /tb/fifo_0
+# =====================
+# wrote: 00
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 11
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 22
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 33
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 44
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 55
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 66
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 77
+# empty=0, full=1
+# =====================
+# =====================
+# read: 00 
+# empty=0 full=0
+# =====================
+# read: 11 
+# empty=0 full=0
+# =====================
+# read: 22 
+# empty=0 full=0
+# =====================
+# read: 33 
+# empty=0 full=0
+# =====================
+# read: 44 
+# empty=0 full=0
+# =====================
+# read: 55 
+# empty=0 full=0
+# =====================
+# read: 66 
+# empty=0 full=0
+# =====================
+# read: 77 
+# empty=1 full=0
+# =====================
+# wrote: 88
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 99
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: aa
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: bb
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: cc
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: dd
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: ee
+# empty=0, full=0
+# =====================
+# =====================
+# read: 88 
+# empty=0 full=0
+# =====================
+# read: 99 
+# empty=0 full=0
+# =====================
+# read: aa 
+# empty=0 full=0
+# =====================
+# read: bb 
+# empty=0 full=0
+# =====================
+# read: cc 
+# empty=0 full=0
+# =====================
+# read: dd 
+# empty=0 full=0
+# =====================
+# read: ee 
+# empty=1 full=0
+# =====================
+# wrote: ff
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 01
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 02
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 04
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 08
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 10
+# empty=0, full=0
+# =====================
+# =====================
+# read: ff 
+# empty=0 full=0
+# =====================
+# read: 01 
+# empty=0 full=0
+# =====================
+# read: 02 
+# empty=0 full=0
+# =====================
+# read: 04 
+# empty=0 full=0
+# =====================
+# read: 08 
+# empty=0 full=0
+# =====================
+# read: 10 
+# empty=1 full=0
+# =====================
+# wrote: 20
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 40
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 80
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: fe
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: fb
+# empty=0, full=0
+# =====================
+# =====================
+# read: 20 
+# empty=0 full=0
+# =====================
+# read: 40 
+# empty=0 full=0
+# =====================
+# read: 80 
+# empty=0 full=0
+# =====================
+# read: fe 
+# empty=0 full=0
+# =====================
+# read: fb 
+# empty=1 full=0
+# =====================
+# wrote: f7
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: ef
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: bf
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: 7f
+# empty=0, full=0
+# =====================
+# =====================
+# wrote: ff
+# empty=0, full=0
+# =====================
+# =====================
+# read: f7 
+# empty=0 full=0
+# =====================
+# read: ef 
+# empty=0 full=0
+# =====================
+# read: bf 
+# empty=0 full=0
+# =====================
+# read: 7f 
+# empty=0 full=0
+# =====================
+# read: ff 
+# empty=1 full=0
+# ** Note: $finish    : tb.sv(57)
+#    Time: 3120 ns  Iteration: 1  Instance: /tb
+# End time: 23:18:27 on May 10,2018, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 3
