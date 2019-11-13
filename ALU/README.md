@@ -1,7 +1,7 @@
 # ALU
 
-- Two 8-bit inputs
-- 4-bit opcode
-- 8-bit result
-- 1-bit zero flagg
-- 1-bit carry bit
+Two 8-bit inputs<br/>
+4-bit opcode<br/>
+8-bit result<br/>
+1-bit zero flagg<br/>
+1-bit carry bit
