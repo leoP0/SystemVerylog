@@ -1,0 +1,6 @@
+read_sverilog  alu.sv
+compile
+#report_timing
+#report_area
+#write -format verilog -hierarchy -output alu.v
+#quit!

@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/nfs/stak/users/perezed/Documents/ECE474/hw2
+T_opt
+!s110 1525386869
+V=dd]F@4nc8;W>WWCXiSTc2
+04 3 4 work alu fast 0
+=1-14feb5d10927-5aeb8e75-718a7-ab8
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+valu
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1525386852
+!i10b 1
+!s100 I0DC>_4Ikl5`=PCj7g`?k3
+IcC:LY2Ahnk[1n1IbX4`FA0
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 alu_sv_unit
+S1
+R0
+w1524527741
+8alu.sv
+Falu.sv
+L0 5
+OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1525386852.000000
+!s107 alu.sv|
+!s90 alu.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

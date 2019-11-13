@@ -1,0 +1,23 @@
+# Tell DC where to look for files 
+lappend search_path ../libs
+
+set synop_lib /nfs/guille/a1/cadlibs/synop_lib/SAED_EDK90nm
+
+# Set up libraries
+#process=1;temp=25;voltage=1.2  "TYPICAL"
+set target_library  $synop_lib/Digital_Standard_Cell_Library/synopsys/models/saed90nm_typ_pg.db
+
+#process=0.8;temp=25;voltage=1.32  "BEST"
+#set target_library  $synop_lib/Digital_Standard_Cell_Library/synopsys/models/saed90nm_max_nt_pg.db
+
+#process=1.2;temp=125;voltage=1.08  "WORST"
+#set target_library  $synop_lib/Digital_Standard_Cell_Library/synopsys/models/saed90nm_min_hth_pg.db
+
+set link_library "* $target_library"
+
+# specify directory for intermediate files from analyze
+define_design_lib WORK -path ./work
+
+suppress_message {UID-401}
+set gui_auto_start 1
+
