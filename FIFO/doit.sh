@@ -2,6 +2,7 @@
 
 # Edgar Perez
 # This script helps to determine if input_data = output_data
+# is the same, it should be the same
 # check if the work director exists
 
 echo "Comparing files... "
@@ -12,16 +13,12 @@ if [ -s "input_data" -a -s "output_data" ]; then
   echo "Files exist!"
 fi
 
-diff "input_data" "output_data" &> /dev/null;
+#compare content dispaly something if different and ignore spaces
+diff --brief -w "input_data" "output_data" >/dev/null
+comp_value=$?
 
-  #diff input_data output_data >| compare_file
-  #diff "input_data" "output_data" | grep ">" | sed 's/^> //g' > diff_file
-  #diff "input_data" "output_data"
-
-#if [ ! -s compare_file ]; then
-if [ $? -eq 0 ]; then
-  echo "FILES are the same yeah!"
-
+if [ $comp_value -eq 0 ]; then 
+    echo "FILES are the same yeah!"
 else
-  echo "FILES are NOT the same :(  ---> (sad face)"
-  fi
+    echo "FILES are NOT the same :(  ---> (sad face)"
+fi

@@ -27,7 +27,8 @@ module fifo (
 	always_ff @(posedge wr_clk, negedge reset_n) begin
 		if(!reset_n)	wr_addr <= '0;     // set reset to be 0
 		else if(wr)		wr_addr <= wr_addr + 1; // if wr is enable, then increment wr_addr to write in next byte
-		else if(wr_addr == 8) wr_addr <= '0;     // set wr_addr to 0
+		// This part needs to change because this will continue counting after 8,9,10... unitl it resets 0000
+		//else if(wr_addr == 8) wr_addr <= '0;     // set wr_addr to 0
 			else 	 	wr_addr <= wr_addr; // if not, hold the value
 	end
 
