@@ -79,7 +79,7 @@ end
 
 // Determine to which register would contain the data
 always_comb begin
-data_out = 0;
+//data_out = 0;
 	unique case (rd_addr[2:0])
 		3'b000 : data_out = byte_0;
 		3'b001 : data_out = byte_1;
@@ -98,7 +98,7 @@ end
 		empty = 1'b1; //set empty to 1
 		full  = 1'b0; //set full to 0
 
-			// when wr_addr=1000 and rd_addr=0000 (full)
+			// when wr_addr=1000 (full)
 			// when wr_addr=1000 and rd_addr=1000 (empty)
 			if(rd_addr[2:0] == wr_addr[2:0])	//Compare the first 3 bits
 			begin
