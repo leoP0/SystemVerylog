@@ -1,4 +1,3 @@
-// Homework 4
 // Edgar Perez
 // ECE474
 // FIFO
