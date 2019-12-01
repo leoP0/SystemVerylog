@@ -1,17 +1,17 @@
-/Edgar Perez
+//Edgar Perez
 //Set up bellow is for DE10-Lite board OSU
 //VGA top level
 
 module VGA(
-					input  logic MAX10_CLK1_50,
-					input  logic [1:0] R_in, G_in, B_in,
-					output logic [3:0] R,G,B,
+					input  logic MAX10_CLK1_50,		// Internal 50Mhz clock
+					input  logic [1:0] R_in, G_in, B_in,	//Inputs connected to the board's switheces
+					output logic [3:0] R,G,B,		// 4-bit output to to DAC 
 					output logic h_sync,			// horizontal sync signal(pulse)
-					output logic v_sync 		// vertical sync signal(pulse)
+					output logic v_sync 			// vertical sync signal(pulse)
 );
 
-logic enable_line;
-logic bus_disp_v, bus_disp_h;
+logic enable_line;						
+logic bus_disp_v, bus_disp_h;			//Bus to the AND gate
 logic half_and_half;					//bus for 25Mhz clock 
 
 half_clk half_clk01(
