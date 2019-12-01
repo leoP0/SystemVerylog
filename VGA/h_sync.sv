@@ -24,13 +24,6 @@ end
 
 always_ff @(posedge clk)
 	begin
-		/* if(h_counter < 96)
-				h_sync=1'b0;		// If count has not reach 96 pixels = 0
-
-		// HSYNC pulse =  back porh + display interval + front porch
-		// HSYNC pulse = (48+640+16)
-		else if ((h_counter >= 96) && (h_counter < 800))
-				h_sync=1'b1; */
 			if ( (h_counter >= 96) && (h_counter < 800) )	h_sync=1'b1;
 			else	h_sync=1'b0;
 	end
@@ -38,13 +31,8 @@ always_ff @(posedge clk)
 always_ff @(posedge clk)
 	begin
 			if(h_counter < 144)	h_display=1'b0;
-
-			else if (h_counter < 784)
-			//else if ( (h_counter >= 144) && (h_counter < 784) )
-				h_display=1'b1;
-			else
-			//else if ((h_counter >= 784) && (h_counter < 800))
-				h_display=1'b0;
+			else if (h_counter < 784) h_display=1'b1;
+			else h_display=1'b0;
 	end
 
 endmodule
