@@ -1,4 +1,5 @@
 // This module slows down the internal clock by 1/2*(internal_clock)
+// Internal 50Mhz clock
 
 module half_clk (
           input  logic clk,         // Infputclock (internal_clock)

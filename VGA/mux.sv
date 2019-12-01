@@ -1,4 +1,4 @@
-module mux(
+module muxx(
 				input logic clk,					//should be 25MHz
 				input logic select_input, // This is where the h_display and v_display go through an AND gate
 				input logic [1:0] R_in, G_in, B_in,
